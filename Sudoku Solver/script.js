@@ -30,5 +30,11 @@ function mainButtonClick() {
   }
 }
 
+function resetButtonClick() {
+  for (iteration = 0; iteration < 81; iteration++) {
+    document.querySelector("#cell" + iteration).value = "";
+  }
+}
+
 mainButton.addEventListener("click", mainButtonClick);
-// resetButton.addEventListener("click", resetButtonClick);
+resetButton.addEventListener("click", resetButtonClick);
