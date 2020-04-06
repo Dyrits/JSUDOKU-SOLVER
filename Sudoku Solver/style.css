@@ -10,8 +10,8 @@ header {
 }
   
 .cell {
-  background-color: white;
-  border: 1px solid black;
+  background-color: #EEE;
+  border: 2px solid #555;
   width:100%;
   height:100%;
   font-size: 3em;
@@ -28,6 +28,26 @@ header {
   grid-template-rows: repeat(9, 1fr);
 }
 
-#solve {
+.button {
+  display: block;
   width: 200px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px auto;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4B4;
+  border: 1px solid #0A0;
+  border-radius: 15px;
+  box-shadow: 0 8px #6C6;
+}
+
+.button:hover{background-color: #2A2}
+
+.button:active {
+  background-color: #0A0;
+  box-shadow: 0 4px #080;
+  transform: translateY(4px);
 }
