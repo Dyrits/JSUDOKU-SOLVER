@@ -6,7 +6,6 @@ header {
   height: 25%;
   background-color: #AAA;
   color: #FFF;
-  text-align: center;
 }
   
 .cell {
@@ -20,12 +19,15 @@ header {
 
 #grid {
   display: grid;
-  text-align: center;
   height: 600px;
   width: 600px;
   margin: 25px auto;
+  padding-bottom: 5px;
+  padding-right: 5px;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
+  gap: 5px;
+  border: 7px solid #333;
 }
 
 .button {

@@ -19,6 +19,12 @@ function generateGrid() {
     sudokuGrid[indexRow][indexColumn].min = "1"
     sudokuGrid[indexRow][indexColumn].max = "9"
     gridBox.appendChild(sudokuGrid[indexRow][indexColumn]);
+    if (indexRow === 3 || indexRow === 6) {
+      sudokuGrid[indexRow][indexColumn].style.borderTop = "7px solid #333"
+    }
+    if (indexColumn === 3 || indexColumn === 6) {
+      sudokuGrid[indexRow][indexColumn].style.borderLeft = "7px solid #333"
+    }
   }
 }
 
