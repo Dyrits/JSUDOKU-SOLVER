@@ -1,7 +1,6 @@
 const gridBox = document.querySelector("#grid")
 const mainButton = document.querySelector("#mainButton")
 const commands = document.querySelector("#commands")
-const cells = document.querySelectorAll(".cell")
 
 const resetButton = document.createElement("button");
 resetButton.id = "resetButton"

@@ -10,6 +10,9 @@ This project will be made using basic JavaScript. It is an exercise I decided to
 JAVASCRIPT
 > How long I have been learning this language when the project was started? Around 15 days~
 
+### CodePen:
+URL: https://codepen.io/Dyrits/pen/mdebKgB
+
 ### Authors:  
 Dylan J. Gerrits
 
