@@ -12,3 +12,6 @@ URL: https://codepen.io/Dyrits/pen/VwLJOQW
 
 ### Authors:  
 Dylan J. Gerrits
+
+### Status:  
+Finished
