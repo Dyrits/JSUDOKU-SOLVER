@@ -100,10 +100,12 @@ header h1 {margin: 0;}
 }
 
 @keyframes appear {
-  0% {opacity: 0;}
+  0% {opacity: 0;
+    background-color: #333;
+  }
   30% {
-    opacity: 0;
-    background-color: #000;
+    opacity: 1;
+    background-color: #555;
   }
   70% {opacity: 1;}  
 }
