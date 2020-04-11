@@ -30,10 +30,10 @@ function getSubGrid(cellNumber) {
   return subGrid[0].concat(subGrid[1], subGrid[2]);
 }
 
-
 // Function creating the grid as an array and displaying it:
 function generateGrid() {
-  for (cellNumber = 0; cellNumber < 81; cellNumber++) {
+  let cellNumber = 0;
+  var generateCellInterval = setInterval(function() {
     sudokuGrid[cellNumber] = document.createElement("input");
     sudokuGrid[cellNumber].type = "number";
     sudokuGrid[cellNumber].classList.add("cell");
@@ -46,8 +46,10 @@ function generateGrid() {
     }
     if (getIndexColumn(cellNumber) === 3 || getIndexColumn(cellNumber) === 6) {
       sudokuGrid[cellNumber].style.borderLeft = "7px solid #333";
-    }
-  }
+    } 
+    cellNumber++;
+    if(cellNumber === 81) {clearInterval(generateCellInterval)}
+  }, 20);
 }
 
 // Function filling sudokuGridValues and adding a class to the cell already having a value:
