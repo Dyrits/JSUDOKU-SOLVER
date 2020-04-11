@@ -32,21 +32,24 @@ function getSubGrid(cellNumber) {
 
 
 // Function creating the grid as an array and displaying it:
-function generateGrid() {
-  for (cellNumber = 0; cellNumber < 81; cellNumber++) {
-    sudokuGrid[cellNumber] = document.createElement("input");
-    sudokuGrid[cellNumber].type = "number"
-    sudokuGrid[cellNumber].classList.add("cell")
-    sudokuGrid[cellNumber].id = "cell" + cellNumber
-    sudokuGrid[cellNumber].min = "1"
-    sudokuGrid[cellNumber].max = "9"
-    gridBox.appendChild(sudokuGrid[cellNumber]);
-    if (getIndexRow(cellNumber) === 3 || getIndexRow(cellNumber) === 6) {
-      sudokuGrid[cellNumber].style.borderTop = "7px solid #333"
-    }
-    if (getIndexColumn(cellNumber) === 3 || getIndexColumn(cellNumber) === 6) {
-      sudokuGrid[cellNumber].style.borderLeft = "7px solid #333"
-    }
+function generateGrid(cellNumber) {
+  while (cellNumber < 81) {
+    setTimeout(function () {
+      sudokuGrid[cellNumber] = document.createElement("input");
+      sudokuGrid[cellNumber].type = "number"
+      sudokuGrid[cellNumber].classList.add("cell")
+      sudokuGrid[cellNumber].id = "cell" + cellNumber
+      sudokuGrid[cellNumber].min = "1"
+      sudokuGrid[cellNumber].max = "9"
+      gridBox.appendChild(sudokuGrid[cellNumber]);
+      if (getIndexRow(cellNumber) === 3 || getIndexRow(cellNumber) === 6) {
+        sudokuGrid[cellNumber].style.borderTop = "7px solid #333";
+      }
+      if (getIndexColumn(cellNumber) === 3 || getIndexColumn(cellNumber) === 6) {
+        sudokuGrid[cellNumber].style.borderLeft = "7px solid #333";
+      }
+    }, 50)
+    cellNumber++;
   }
 }
 
@@ -118,7 +121,7 @@ function solveSudoku() {
 
 function mainButtonClick() {
   if (mainButton.innerHTML === "Generate!") {
-    generateGrid();
+    generateGrid(0);
     mainButton.innerHTML = "Submit!";
     commands.appendChild(resetButton);
   } else if (mainButton.innerHTML === "Submit!") {
