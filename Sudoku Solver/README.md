@@ -6,14 +6,9 @@ It is actually working but I'd like to display the solving in real time.
 
 This project is made using basic JavaScript. It is an exercise I decided to do in order to train my skills concerning the interactions with the HTML DOM. It also allows me to get more confortable with JavaScript.  
 
-### Programming language:
-JAVASCRIPT
-
 ### CodePen:
+You can find this project on CodePen.  
 URL: https://codepen.io/Dyrits/pen/mdebKgB
-
-### Authors:  
-Dylan J. Gerrits
 
 ### Status:  
 On going
