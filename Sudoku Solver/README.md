@@ -8,7 +8,7 @@ This project is made using basic JavaScript. It is an exercise I decided to do i
 
 ### CodePen:
 You can find this project on CodePen.  
-URL: https://codepen.io/Dyrits/pen/mdebKgB
+URL: https://codepen.io/Dyrits/details/mdebKgB
 
 ### Status:  
 On going

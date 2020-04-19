@@ -6,7 +6,7 @@ This project was made using basic JavaScript. It is an exercise I decided to do 
 
 ### CodePen:
 You can find this project on CodePen.  
-URL: https://codepen.io/Dyrits/pen/VwLJOQW
+URL: https://codepen.io/Dyrits/details/VwLJOQW
 
 ### Status:  
 Finished
