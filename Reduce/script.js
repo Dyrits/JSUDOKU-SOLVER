@@ -20,4 +20,30 @@ class Reduce {
     }, {});
   }
 
+  static count(array, value) {
+    return array.reduce(function (accumulator, currentValue) {
+      if (currentValue === value) {accumulator ++;}
+      return accumulator;
+    }, 0);
+  }
+
+  static countArray(array, arrayValues) {
+    return array.reduce(function (accumulator, currentValue) {
+      if (arrayValues.includes(currentValue)) {
+        accumulator[currentValue] ? accumulator[currentValue] ++ : accumulator[currentValue] = 1;
+      }
+      return accumulator;
+    }, {});
+  }
+
+  static countAll(array) {
+    return array.reduce(function (accumulator, currentValue) {
+      accumulator[currentValue] ? accumulator[currentValue]++ : accumulator[currentValue] = 1;
+      return accumulator;
+    }, {});
+  }
+
 }
+
+const test = ["2", "1", "2", "2", "5", "7"];
+console.log(Reduce.countValuesAll(test))
