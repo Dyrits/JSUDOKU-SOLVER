@@ -27,7 +27,7 @@ class Reduce {
     }, 0);
   }
 
-  static countArray(array, arrayValues) {
+  static countInArray(array, arrayValues) {
     return array.reduce(function (accumulator, currentValue) {
       if (arrayValues.includes(currentValue)) {
         accumulator[currentValue] ? accumulator[currentValue] ++ : accumulator[currentValue] = 1;
@@ -38,7 +38,7 @@ class Reduce {
 
   static countAll(array) {
     return array.reduce(function (accumulator, currentValue) {
-      accumulator[currentValue] ? accumulator[currentValue]++ : accumulator[currentValue] = 1;
+      accumulator[currentValue] ? accumulator[currentValue] ++ : accumulator[currentValue] = 1;
       return accumulator;
     }, {});
   }
