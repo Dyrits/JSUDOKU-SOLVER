@@ -44,6 +44,3 @@ class Reduce {
   }
 
 }
-
-const test = ["2", "1", "2", "2", "5", "7"];
-console.log(Reduce.countValuesAll(test))
