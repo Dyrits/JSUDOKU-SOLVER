@@ -18,7 +18,7 @@ header h1 {margin: 0;}
   animation-fill-mode: backwards;
 }
 
-.userInput {
+.input {
   color: rgb(50, 25, 140);
 }
 
@@ -39,7 +39,6 @@ header h1 {margin: 0;}
   display: block;
   width: 200px;
   height: 50px;
-  border-radius: 50%;
   margin: 30px auto;
   font-size: 24px;
   cursor: pointer;
@@ -50,29 +49,29 @@ header h1 {margin: 0;}
   animation-fill-mode: backwards;
 }
 
-#mainButton {
+#generate {
   background-color: #4B4;
   border: 1px solid #0A0;
   box-shadow: 0 8px #6C6;
 }
 
-#mainButton:hover{background-color: #2A2;}
+#generate:hover{background-color: #2A2;}
 
-#mainButton:active {
+#generate:active {
   background-color: #0A0;
   box-shadow: 0 4px #080;
   transform: translateY(4px);
 }
 
-#resetButton {
+#reset {
   background-color: #B44;
   border: 1px solid #A00;
   box-shadow: 0 8px #C66;
 }
 
-#resetButton:hover{background-color: #A22;}
+#reset:hover{background-color: #A22;}
 
-#resetButton:active {
+#reset:active {
   background-color: #A00;
   box-shadow: 0 4px #800;
   transform: translateY(4px);
